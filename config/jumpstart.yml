@@ -1,0 +1,20 @@
+--- !ruby/object:Jumpstart::Configuration
+application_name: Nestor Planchet
+business_name: Jumpstart Company, LLC
+business_address: ''
+domain: example.com
+support_email: support@example.com
+default_from_email: Jumpstart <support@example.com>
+background_job_processor: async
+email_provider: ''
+personal_accounts: true
+register_with_account: false
+collect_billing_address: false
+apns: false
+fcm: false
+integrations:
+omniauth_providers:
+- google-oauth2
+payment_processors:
+multitenancy:
+gems:
