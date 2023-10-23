@@ -1,5 +1,6 @@
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 Rails.application.routes.draw do
+  get "reviews/reply"
   draw :turbo
 
   # Jumpstart views
@@ -56,6 +57,13 @@ Rails.application.routes.draw do
     }.compact
   devise_scope :user do
     get "session/otp", to: "sessions#otp"
+  end
+
+  # Reviews
+  resources :reviews, only: [] do
+    member do
+      post :reply
+    end
   end
 
   resources :announcements, only: [:index, :show]

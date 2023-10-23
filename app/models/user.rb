@@ -76,6 +76,7 @@ class User < ApplicationRecord
 
   # Protect admin flag from editing
   attr_readonly :admin
+  attr_encrypted :access_token, key: Rails.application.credentials.secret_key_base
 
   # Validations
   validates :name, presence: true
