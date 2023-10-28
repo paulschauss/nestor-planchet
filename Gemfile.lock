@@ -121,6 +121,8 @@ GEM
       activerecord (>= 3.2, < 8.0)
       rake (>= 10.4, < 14.0)
     ast (2.4.2)
+    attr_encrypted (4.0.0)
+      encryptor (~> 3.0.0)
     base64 (0.1.1)
     bcrypt (3.1.19)
     better_html (2.0.2)
@@ -173,6 +175,7 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     drb (2.1.1)
       ruby2_keywords
+    encryptor (3.0.0)
     erb_lint (0.5.0)
       activesupport
       better_html (>= 2.0.1)
@@ -516,6 +519,7 @@ DEPENDENCIES
   administrate!
   administrate-field-active_storage (~> 0.4.1)
   annotate (>= 3.2.0)
+  attr_encrypted
   bootsnap (>= 1.4.2)
   capybara (>= 3.39)
   country_select (~> 8.0)
@@ -525,6 +529,7 @@ DEPENDENCIES
   devise-i18n (~> 1.10)
   erb_lint
   error_highlight (>= 0.4.0)
+  faraday
   image_processing (~> 1.12)
   inline_svg (~> 1.6)
   invisible_captcha (~> 2.0)
