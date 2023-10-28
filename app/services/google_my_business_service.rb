@@ -29,6 +29,7 @@ class GoogleMyBusinessService
     locations.each do |location|
       location_id = location["name"]
       reviews = fetch_reviews(account_id, location_id)
+      reviews&.each { |r| r["location_name"] = location["title"] }
       all_reviews.concat(reviews) if reviews
     end
     all_reviews
