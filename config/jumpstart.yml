@@ -1,6 +1,6 @@
 --- !ruby/object:Jumpstart::Configuration
 application_name: Nestor Planchet
-business_name: Jumpstart Company, LLC
+business_name: Nestor Planchet
 business_address: ''
 domain: example.com
 support_email: support@example.com
