@@ -5,8 +5,10 @@
 #  id                     :bigint           not null, primary key
 #  accepted_privacy_at    :datetime
 #  accepted_terms_at      :datetime
+#  access_token           :string
 #  admin                  :boolean
 #  announcements_read_at  :datetime
+#  business_type          :string
 #  confirmation_sent_at   :datetime
 #  confirmation_token     :string
 #  confirmed_at           :datetime

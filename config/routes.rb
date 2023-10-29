@@ -151,6 +151,10 @@ Rails.application.routes.draw do
   match "/404", via: :all, to: "errors#not_found"
   match "/500", via: :all, to: "errors#internal_server_error"
 
+  patch "dashboard", to: "dashboard#show"
+  get "generate_response", to: "dashboard#generate_response"
+  post "generate_response", to: "dashboard#generate_response"
+
   authenticated :user do
     root to: "dashboard#show", as: :user_root
     # Alternate route to use if logged in users should still see public root
