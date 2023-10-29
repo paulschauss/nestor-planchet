@@ -1,16 +1,462 @@
+<!--
+  ```
+ ---------------HERO SECTION-----------------
+  ```
+-->
 <div class="py-32 max-w-2xl m-auto text-center flex flex-col items-center justify-center">
-  <h1 class="mb-2">Welcome to Jumpstart</h1>
-  <p class="mb-6 text-gray-700 dark:text-gray-200 leading-normal text-xl">Jumpstart is the perfect starting point for your next Ruby on Rails app. Skip the boilerplate setup and build your app faster.</p>
+  <h1 class="mb-2">Bienvenue chez Nestor Planchet </h1>
+  <p class="mb-6 text-gray-700 dark:text-gray-200 leading-normal text-xl">Nestor est un outil basé sur l'intelligence artificielle pour proposer automatiquement des réponses personnalisées aux avis sur vos établissements Google My Business pour booster votre présence en ligne. Simplement</p>
   <% if Rails.env.development? %>
     <div class="flex flex-col items-center md:flex-row">
       <div class="w-full md:w-auto">
-        <%= link_to "Configure Jumpstart", jumpstart_path, data: { turbo: false }, class: "btn btn-primary lg:mr-4 mr-0 lg:mb-0 mb-4" %>
+        <%= link_to "Essayer gratuitement", jumpstart_path, data: { turbo: false }, class: "btn btn-primary lg:mr-4 mr-0 lg:mb-0 mb-4" %>
       </div>
       <div>
         <span class="hidden md:inline border border-gray-200 h-10 mr-4"></span>
-        <%= link_to "Create a User", new_user_registration_path, class: "btn btn-tertiary btn-outline lg:mr-4 mr-0 lg:mb-0 mb-4" %>
-        <%= link_to "Read the Docs", jumpstart.docs_path, target: :_blank, data: { turbo: false }, class: "btn btn-tertiary btn-outline lg:mr-4 mr-0 lg:mb-0 mb-4" %>
+        <%= link_to "Se connecter", new_user_registration_path, class: "btn btn-tertiary btn-outline lg:mr-4 mr-0 lg:mb-0 mb-4" %>
+        <%= link_to "Découvrir", jumpstart.docs_path, target: :_blank, data: { turbo: false }, class: "btn btn-tertiary btn-outline lg:mr-4 mr-0 lg:mb-0 mb-4" %>
       </div>
     </div>
   <% end %>
+</div>
+
+
+<!--
+  ```
+ ---------------PRESENTATION-----------------
+  ```
+-->
+
+<div class="bg-white py-24 sm:py-32">
+    <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+      aria-hidden="true">
+      <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div
+      class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+      aria-hidden="true">
+      <div
+        class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-base font-semibold leading-7 text-indigo-600">Répondez mieux et plus vite</h2>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">L'outil pour apporter des réponses personnalisée à vos avis</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Connectez votre compte Google My Business et laissez notre générateur vous proposer des réponses personnalisées automatiquement. Vous n'avez qu'à adapter et les publiez ! En moyenne une réponse prend une minute avec cet outil contre 8 sans.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+            <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+            </svg>
+            Remonter dans Google et Maps
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto">Nos réponses sont construites avec une logique SEO permettant de booster votre visibilité sur les mots clés principaux de votre activité. Vous serez plus visible et recevrez plus de clients dans votre établissement.</p>
+            <p class="mt-6">
+            <!--  <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
+          commentaire -->
+          </p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+            <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+            </svg>
+            Libérer votre temps
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto">Nestor vous permets d'intéragir de manière personnalisée avec vos clients sans y passer trop de temps.</p>
+            <p class="mt-6">
+              <!--   <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
+              -->
+              </p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+            <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z" clip-rule="evenodd" />
+            </svg>
+            Améliorer votre image
+          </dt>
+          <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+            <p class="flex-auto">Répondre aux avis permet non seulement de créer un lien avec ses clients pour augmenter leur fidélité, mais les avis
+            donneront également plus confiance en votre image en ligne. Les visiteurs d'internet viendront
+            davantage dans votre établissement..</p>
+            <p class="mt-6">
+              <!--
+              <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
+              -->
+            </p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+<!--
+  ```
+ ---------------STATS-----------------
+  ```
+-->
+<div class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+    <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+      aria-hidden="true">
+      <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div
+      class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+      aria-hidden="true">
+      <div
+        class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Gagnez du temps et des clients</h2>
+        <p class="mt-4 text-lg leading-8 text-gray-600">En moyenne nos utilisateurs gagnent deux heures par semaines et 5% de clients.</p>
+      </div>
+      <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col bg-gray-400/5 p-8">
+          <dt class="text-sm font-semibold leading-6 text-gray-600">Etablissements sur Nestor</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">200+</dd>
+        </div>
+        <div class="flex flex-col bg-gray-400/5 p-8">
+          <dt class="text-sm font-semibold leading-6 text-gray-600">Automatisé avec l'IA</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">100%</dd>
+        </div>
+        <div class="flex flex-col bg-gray-400/5 p-8">
+          <dt class="text-sm font-semibold leading-6 text-gray-600">de réponses qui ne nécessitent pas d'ajustement</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">92.0%</dd>
+        </div>
+        <div class="flex flex-col bg-gray-400/5 p-8">
+          <dt class="text-sm font-semibold leading-6 text-gray-600">Avis déjà traités</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">1 400</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+<!--
+  ```
+ ---------------PRIX-----------------
+  ```
+-->
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-indigo-600">Prix</h2>
+      <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Des prix pour toutes les structures</p>
+    </div>
+    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Que vous cherchiez un outils pour vous aider à répondre à vos avis Google sur un rythme régulier ou si vous souhaitez répondre à tout votre historique sans réponse, nous avons une offre pour vous.</p>
+    <div class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 lg:mt-8 lg:rounded-r-none">
+        <div>
+          <div class="flex items-center justify-between gap-x-4">
+            <h3 id="tier-freelancer" class="text-lg font-semibold leading-8 text-gray-900">Petits établissements</h3>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-600">Pour répondre régulièrement à vos avis en un clin d'oeil !</p>
+          <p class="mt-6 flex items-baseline gap-x-1">
+            <span class="text-4xl font-bold tracking-tight text-gray-900">0€</span>
+            <span class="text-sm font-semibold leading-6 text-gray-600">/mois</span>
+          </p>
+          <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              5 réponses par jour
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              10 réponses par jour le premier mois
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Jusqu'à 30 réponses les mois suivants
+            </li>
+          </ul>
+        </div>
+        <a href="#" aria-describedby="tier-freelancer" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">Essayer gratuitement</a>
+      </div>
+      <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 lg:z-10 lg:rounded-b-none">
+        <div>
+          <div class="flex items-center justify-between gap-x-4">
+            <h3 id="tier-startup" class="text-lg font-semibold leading-8 text-indigo-600">Une réponse pour tous</h3>
+            <p class="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">Le + populaire</p>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-600">Un plan pour palier à votre historique d'avis sans réponses.</p>
+          <p class="mt-6 flex items-baseline gap-x-1">
+            <span class="text-4xl font-bold tracking-tight text-gray-900">40€</span>
+            <span class="text-sm font-semibold leading-6 text-gray-600">/100 réponses</span>
+          </p>
+          <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              100 crédits pour répondre à 100 avis automatiquement
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Optimisation SEO avec les champs lexicaux
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Après un mois, vous repassez sur l'offre Free
+            </li>
+          </ul>
+        </div>
+        <a href="#" aria-describedby="tier-startup" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500">Acheter</a>
+      </div>
+      <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 lg:mt-8 lg:rounded-l-none">
+        <div>
+          <div class="flex items-center justify-between gap-x-4">
+            <h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900">Gros établissements</h3>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-600">Une solution dédiée pour gérer un flux important d'avis.</p>
+          <p class="mt-6 flex items-baseline gap-x-1">
+            <span class="text-4xl font-bold tracking-tight text-gray-900">100€</span>
+            <span class="text-sm font-semibold leading-6 text-gray-600">/mois</span>
+          </p>
+          <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              30 avis par jour
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Optimisation SEO avec les champs lexicaux
+            </li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Un interlocuteur unique dédié
+            </li>
+          </ul>
+        </div>
+        <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">S'abonner</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+  ```
+ ---------------TESTIMONIALS-----------------
+  ```
+--><div class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+  <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
+    <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
+    <div class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-xl text-center">
+      <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Ils utilisent et sont satisfaits</h2>
+      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Restaurants, musées, ecommercants, boutiques : nous travaillons avec tout types d'établissements</p>
+    </div>
+    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+      <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+        <blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+          <p>"On utilise Nestor Planchet depuis 3 mois pour tous nos salons et ca nous évite de passer une énergie folle à répondre à tout le monde. En plus les réponses sont personnalisés et les clients nous remercient !”</p>
+        </blockquote>
+        <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+          <img class="h-10 w-10 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80" alt="">
+          <div class="flex-auto">
+            <div class="font-semibold">Sophie schaffrot</div>
+            <div class="text-gray-600">Salons de coiffure</div>
+          </div>
+          <img class="h-10 w-auto flex-none" src="https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg" alt="">
+        </figcaption>
+      </figure>
+      <div class="space-y-8 xl:contents xl:space-y-0">
+        <div class="space-y-8 xl:row-span-2">
+          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote class="text-gray-900">
+              <p>"Super pratique Nestor : en quelques minutes on a répondu à tous les avis et on voit bien que les gens nous trouvent plus facilement sur Google Maps.”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div>
+                <div class="font-semibold">Claire Latouche</div>
+                <div class="text-gray-600">Bar - Café</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- More testimonials... -->
+        </div>
+        <div class="space-y-8 xl:row-start-1">
+          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote class="text-gray-900">
+              <p>"Nestor nous a bien aidé quand on a décidé d'améliorer notre présence en ligne en répondant en 10 minutes à tous nos avis.”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div>
+                <div class="font-semibold">Katie M.</div>
+                <div class="text-gray-600">Librairie</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- More testimonials... -->
+        </div>
+      </div>
+      <div class="space-y-8 xl:contents xl:space-y-0">
+        <div class="space-y-8 xl:row-start-1">
+          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote class="text-gray-900">
+              <p>C'est un stagiaire qui s'occupe de notre présence en ligne, il nous a parlé de Nestor Planchet et il a gagné une demi journée par semaine grace à cet outil, surtout que ce n'était pas la tâche la plus sympa...”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div>
+                <div class="font-semibold">Patrick F.</div>
+                <div class="text-gray-600">Musée</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- More testimonials... -->
+        </div>
+        <div class="space-y-8 xl:row-span-2">
+          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote class="text-gray-900">
+              <p>Je savais qu'il fallait répondre au avis mais je n'avais jamais le temps, j'ai utilisé Nestor Planchet pour répondre à mes 80 avis sans réponse et j'en suis très content !”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div>
+                <div class="font-semibold">Hamza Tougzo</div>
+                <div class="text-gray-600">Photographe</div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- More testimonials... -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+  ```
+ ---------------FAQ-----------------
+  ```
+--><div class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+    <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+      <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Foire au questions</h2>
+      <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+        <div class="pt-6">
+          <dt>
+            <!-- Expand/collapse question button -->
+            <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+              <span class="text-base font-semibold leading-7">Comment est-ce que l'outil fonctionne ?</span>
+              <span class="ml-6 flex h-7 items-center">
+                <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                </svg>
+                <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd class="mt-2 pr-12" id="faq-0">
+            <p class="text-base leading-7 text-gray-600">1 - Connectez-vous sur Nestor Planchet avec votre compte Google My Business relié à votre établissement.
+              </br>
+              2 - Visualisez tous vos avis sans réponse sur votre interface
+              </br>
+              3 - Générez des réponses automatiquement
+              </br>
+              4 - Adapter la réponse proposée pour mieux coller à votre ton unique
+              </br>
+              5 - Publiez ! Partagez votre réponse, elle apparaitra sous l'avis sur votre page de votre établissement.
+            </p>
+          </dd>
+        </div>
+
+        <!----------------------- 2e question ---------------------------->
+<dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+  <div class="pt-6">
+    <dt>
+      <!-- Expand/collapse question button -->
+      <button type="button" class="flex w-full items-start justify-between text-left text-gray-900"
+        aria-controls="faq-0" aria-expanded="false">
+        <span class="text-base font-semibold leading-7">Pourquoi Nestor Planchet ?</span>
+        <span class="ml-6 flex h-7 items-center">
+          <!--
+                  Icon when question is collapsed.
+
+                  Item expanded: "hidden", Item collapsed: ""
+                -->
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+          </svg>
+          <!--
+                  Icon when question is expanded.
+
+                  Item expanded: "", Item collapsed: "hidden"
+                -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+          </svg>
+        </span>
+      </button>
+    </dt>
+    <dd class="mt-2 pr-12" id="faq-0">
+      <p class="text-base leading-7 text-gray-600">Nestor, le majordomme de Tintin. Planchet est le valet de d'Artagnan. L'idée de cet outil est venue d'amis restaurateurs qui prennaient trop de temps pour répondre à tous les avis et qui avaient besoin d'une petite aide, un peu d'inspiration pour répondre aux avis, sans cogiter deux heures sur cet avis "une étoile"... On espère qu'il vous plaira !</p>
+    </dd>
+  </div>
+
+      </dl>
+    </div>
+  </div>
 </div>
