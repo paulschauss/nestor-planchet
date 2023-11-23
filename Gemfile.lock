@@ -209,6 +209,8 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
+    font-awesome-sass (6.4.2)
+      sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashdiff (1.0.1)
@@ -548,6 +550,7 @@ DEPENDENCIES
   erb_lint
   error_highlight (>= 0.4.0)
   faraday
+  font-awesome-sass (~> 6.4.2)
   image_processing (~> 1.12)
   inline_svg (~> 1.6)
   invisible_captcha (~> 2.0)

@@ -95,3 +95,4 @@ eval_gemfile "Gemfile.jumpstart"
 # gem "strong_migrations", "~> 0.7.6"
 
 gem "aws-sdk-s3", require: false
+gem "font-awesome-sass", "~> 6.4.2"
