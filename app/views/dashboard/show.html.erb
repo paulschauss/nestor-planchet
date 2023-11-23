@@ -1,4 +1,5 @@
 <div class="container mx-auto p-4">
+  <h1><%= t(".title") %></h1>
   <%= form_with(model: current_user, url: dashboard_path, local: true, method: :patch) do |f| %>
     <div class="my-4">
       <%= f.label :business_type, "Type d'entreprise" %>
@@ -8,14 +9,15 @@
     </div>
     <%= f.submit "Mettre à jour", class: "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" %>
   <% end %>
+
   <div class="my-8">
-    <h1><%= t(".title") %></h1>
     <ul class="list-none">
       <% @reviews.each do |review| %>
-        <li class="bg-gray-100 p-2 my-2 rounded text-gray-800">
-          <strong><%= review["location_name"] %></strong>
-          <%= review["starRating"] %> <%= review["reviewer"]["displayName"] %> : "<%= extract_original_text(review["comment"]) %>" le <%= review["createTime"] %>
-          <div class="mt-2">
+        <li class="bg-black-800 p-2 my-2 rounded text-white-800">
+          <strong><%= review["location_name"] %></strong> <%= string_to_integer(review["starRating"]).times.map { "<i class='text-yellow-400 fas fa-star'></i>" }.join.html_safe %>
+          <br>
+          <%= review["reviewer"]["displayName"] %> : "<%= extract_original_text(review["comment"]) %>"
+          <div class="mt-2 py-2">
             <%= form_with url: reply_review_path(review["name"]), local: true,
                           data: { 
                             controller: "generate",
@@ -30,8 +32,10 @@
               </div>
             <% end %>
           </div>
+
         </li>
       <% end %>
     </ul>
   </div>
 </div>
+
