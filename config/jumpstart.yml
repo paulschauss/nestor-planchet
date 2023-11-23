@@ -1,9 +1,9 @@
 --- !ruby/object:Jumpstart::Configuration
 application_name: Nestor Planchet
-business_name: Jumpstart Company, LLC
-business_address: ''
+business_name: SAS Nestor Planchet
+business_address: 2 place Antonin Jutard 69003 Lyon
 domain: example.com
-support_email: support@example.com
+support_email: contact@nestor.ai
 default_from_email: Jumpstart <support@example.com>
 background_job_processor: async
 email_provider: ''
