@@ -1,9 +1,15 @@
 class DashboardController < ApplicationController
+  before_action :set_service, only: [:show]
+
   def show
-    access_token = current_user.connected_accounts.first.access_token # TO DO - Considèrer une approche plus robuste
-    service = GoogleMyBusinessService.new(access_token)
-    account_id = service.fetch_accounts
-    @reviews = service.fetch_all_reviews(account_id)
+    account_id = @service.fetch_accounts
+    if account_id
+      @reviews = @service.fetch_all_reviews(account_id)
+    else
+      sign_out(current_user)
+      reset_session
+      redirect_to new_user_session_path, alert: "Your session has expired. Please sign in again."
+    end
 
     if request.patch?
       if current_user.update(business_type_params)
@@ -21,6 +27,11 @@ class DashboardController < ApplicationController
   end
 
   private
+
+  def set_service
+    access_token = current_user.connected_accounts.first.access_token # TO DO - Considèrer une approche plus robuste
+    @service = GoogleMyBusinessService.new(access_token)
+  end
 
   def business_type_params
     params.require(:user).permit(:business_type)

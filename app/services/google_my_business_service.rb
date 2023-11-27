@@ -8,8 +8,12 @@ class GoogleMyBusinessService
 
   def fetch_accounts
     response = connection.get("https://mybusinessaccountmanagement.googleapis.com/v1/accounts")
-    accounts = JSON.parse(response.body)
-    accounts["accounts"].first["name"] || []
+    if response.success?
+      accounts = JSON.parse(response.body)
+      accounts["accounts"].first["name"] || []
+    else
+      nil
+    end
   end
 
   def fetch_all_locations(account_id)
