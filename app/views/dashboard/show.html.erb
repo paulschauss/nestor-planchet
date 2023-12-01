@@ -7,16 +7,28 @@
         <%= options_for_select(["Restaurant", "Hôtel", "Magasin", "Autre"], current_user.business_type) %>
       <% end %>
     </div>
-    <%= f.submit "Mettre à jour", class: "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" %>
+    <%= f.submit "Mettre à jour", class: "cursor-pointer rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
   <% end %>
 
   <div class="my-8">
-    <ul class="list-none">
+    <ul class="list-none divide-y divide-white/5">
       <% @reviews.each do |review| %>
         <li class="bg-black-800 p-2 my-2 rounded text-white-800">
-          <strong><%= review["location_name"] %></strong> <%= string_to_integer(review["starRating"]).times.map { "<i class='text-yellow-400 fas fa-star'></i>" }.join.html_safe %>
-          <br>
-          <%= review["reviewer"]["displayName"] %> : "<%= extract_original_text(review["comment"]) %>"
+          <div class="flex items-center gap-x-3 my-4">
+            <div class="flex-none rounded-full p-1 text-gray-500 bg-gray-100/10">
+              <div class="h-2 w-2 rounded-full bg-current"></div>
+            </div>
+            <h2 class="min-w-0 text-sm font-semibold leading-6 text-white">
+              <p class="flex gap-x-2">
+                <span class="truncate"><%= review["reviewer"]["displayName"] %></span>
+                <span></strong> <%= string_to_integer(review["starRating"]).times.map { "<i class='text-yellow-400 fas fa-star'></i>" }.join.html_safe %></span>
+                <span class="rounded-full flex-none py-1 px-2 text-xs font-medium ring-1 ring-inset text-indigo-400 bg-indigo-400/10 ring-indigo-400/30"><%= review["location_name"] %></span>
+              </p>
+            </h2>
+          </div>
+          <div class="p-2">
+            <%= extract_original_text(review["comment"]) %>
+          </div>
           <div class="mt-2 py-2">
             <%= form_with url: reply_review_path(review["name"]), local: true,
                           data: { 
@@ -25,10 +37,25 @@
                             generate_business_value: current_user.business_type,
                             generate_review_value: extract_original_text(review["comment"]),
                           } do |f| %>
-              <div class="flex items-center space-x-2">
-                <%= f.text_area :reply, placeholder: "Votre réponse...", value: review["reviewReply"] ? extract_original_text(review["reviewReply"]["comment"]) : nil, class: "p-2 rounded w-full border text-gray-800", data: { generate_target: "input" } %>
-                <button type="button" class="generate-reply px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600" data-action="click->generate#generate">Generate</button>
-                <%= f.submit "Envoyer", class: "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" %>
+                <div class="mt-2">
+                  <div id="tabs-1-panel-1" class="-m-0.5 rounded-lg p-0.5" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
+                    <div>
+                      <%= f.text_area :reply, placeholder: "Votre réponse...", 
+                                                    value: review["reviewReply"] ? extract_original_text(review["reviewReply"]["comment"]) : nil, 
+                                                    class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", 
+                                                    data: { generate_target: "input" }
+                                                    
+                                                    %>
+                    </div>
+                  </div>
+                <div class="mt-2 flex justify-end space-x-2">
+                  <button type="button" 
+                          class="generate-reply inline-flex items-center rounded-md bg-indigo-400 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" 
+                          data-action="click->generate#generate">
+                          Generate
+                  </button>
+                  <%= f.submit "Envoyer", class: "cursor-pointer inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+                </div>
               </div>
             <% end %>
           </div>
@@ -38,4 +65,3 @@
     </ul>
   </div>
 </div>
-
