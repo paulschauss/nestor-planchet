@@ -21,7 +21,7 @@ class DashboardController < ApplicationController
   end
 
   def generate_response
-    service = GetResponseService.new(params[:location_name], params[:review], params[:business_type])
+    service = GetResponseService.new(params[:location], params[:review], params[:business])
     response = service.call
     render json: {response: response}
   end
