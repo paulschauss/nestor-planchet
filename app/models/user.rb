@@ -83,6 +83,7 @@ class User < ApplicationRecord
   # Validations
   validates :name, presence: true
   validates :avatar, resizable_image: true
+  validates :business_type, length: { maximum: 25 }
 
   after_initialize :set_default_business_type, if: :new_record?
 
