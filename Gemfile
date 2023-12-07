@@ -96,3 +96,4 @@ eval_gemfile "Gemfile.jumpstart"
 
 gem "aws-sdk-s3", require: false
 gem "font-awesome-sass", "~> 6.4.2"
+gem "pagy", "~> 6.0"
