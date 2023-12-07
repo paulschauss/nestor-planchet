@@ -4,7 +4,8 @@ class DashboardController < ApplicationController
   def show
     account_id = @service.fetch_accounts
     if account_id
-      @reviews = @service.fetch_all_reviews(account_id)
+      reviews_fetched = @service.fetch_all_reviews(account_id)
+      @pagy, @reviews = pagy_array(reviews_fetched)
     else
       sign_out(current_user)
       reset_session
