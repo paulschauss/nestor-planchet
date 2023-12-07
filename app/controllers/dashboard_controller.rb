@@ -14,7 +14,7 @@ class DashboardController < ApplicationController
 
     if request.patch?
       if current_user.update(business_type_params)
-        redirect_to root_path
+        redirect_to root_path, alert: "Your business type has been updated."
       else
         render :show
       end
